@@ -3,7 +3,7 @@ file system operations (windows,linux)
 
 <pre>
 ackitree.exe
-	-r //recrusive \n
+	-r //recrusive
 	-l //log.txt file names
 	-f //file format etc.. .txt
 	-d //path to sdelete, delete files found
