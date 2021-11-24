@@ -1,9 +1,9 @@
 # ackit-explorer
 file system operations (windows,linux)
 
-
+<pre>
 ackitree.exe
-	-r //recrusive
+	-r //recrusive \n
 	-l //log.txt file names
 	-f //file format etc.. .txt
 	-d //path to sdelete, delete files found
@@ -13,3 +13,4 @@ ackitree.exe
 	-u //unlink files found
 	-U //unlink after copy an encryption flag
 	-p //passphrase
+</pre>
