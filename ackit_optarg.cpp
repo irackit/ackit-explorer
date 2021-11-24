@@ -53,9 +53,7 @@ namespace ackit{
                     ackit_ackitflags(this->flags, ACKIT_PPHRASE);
                 break;
                 case 'h':
-                    std::cout<<"ackitree.exe"<<std::right<<std::endl;
-                    std::cout<<std::setw(10)<<"-l <logfile.txt>"<<std::endl;
-                    std::cout<<std::setw(10)<<std::left<<"-f search for file format type"<<std::endl;
+                    std::cout<<"see readme.txt :P"<<std::endl;
                 break;
                 case '?':
                     if(optopt == 'l'){
