@@ -5,6 +5,8 @@
 
 #include <unistd.h>
 #include <string>
+#include <iostream>
+#include <vector>
 #include <getopt.h>
 
 extern int opterr;
@@ -24,15 +26,17 @@ namespace ackit{
     #define ACKIT_CLOC      0b0000010000000000 //
     #define ACKIT_UFILE     0b0000100000000000 //
     #define ACKIT_UAFILE    0b0001000000000000 //
+    #define ACKIT_PATH      0b0010000000000000 //
 
     #define ackit_ackitflags(a, b) a |= b
+    #define ackit_ackitgetflags(a,b) a &= b
 
     class ackit_optarg{
         public:
-            ackit_optarg( std::string = "-rl:f:d:e:E:L:u:U:p:h");
-            int ackit_phrase( int, char**);
+            ackit_optarg( std::string = "-rl:f:d:e:E:L:u:U:p:P:h" );
+            int ackit_phrase( int, char** );
         private:
-            std::string options,logfile,fileformat,sdeletepath,gpgpath,copypath,pathphrase,unlink;
+            std::string options,logfile,fileformat,sdeletepath,gpgpath,copypath,pathphrase,unlink,path;
             unsigned short flags;
     };
 }
